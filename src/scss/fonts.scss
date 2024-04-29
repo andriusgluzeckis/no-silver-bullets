@@ -1,0 +1,56 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.geologica-regular {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0,
+      "SHRP" 0;
+  }
+
+  .geologica-semibold {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0,
+      "SHRP" 0;
+  }
+
+  .geologica-bold {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0,
+      "SHRP" 0;
+  }
+
+@font-face {
+    font-family: 'Bureau Grot UltraBlack';
+    src: url('./fonts/BureauGrot-UltraBlack.eot');
+    src: url('./fonts/BureauGrot-UltraBlack.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BureauGrot-UltraBlack.woff2') format('woff2'),
+        url('./fonts/BureauGrot-UltraBlack.woff') format('woff'),
+        url('./fonts/BureauGrot-UltraBlack.ttf') format('truetype'),
+        url('./fonts/BureauGrot-UltraBlack.svg#BureauGrot-UltraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.bureau {
+  font-family: 'Bureau Grot UltraBlack';
+}
+
+.title-font-1 {
+  @apply text-68
+}

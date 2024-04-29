@@ -1,0 +1,82 @@
+@keyframes animate-banner {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+@layer components {
+    .animate-banner {
+        animation-name: animate-banner;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+#prodotti {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: move 10s linear infinite;
+    padding: 0.5vh;
+    margin: 8px 0px 0px 0px;
+  }
+  
+  .photo img {
+    margin: 0 0.5em;
+    height: calc(100vh - 16px);
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @media only screen and (orientation: portrait) {
+    .photo img {
+      margin-top: calc(50vh - 50vw);
+      height: calc(100vw - 16px);
+    }
+  }
+
+  .services-ticker-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+ 
+  .stb_line_single {
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    will-change: transform;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .stb-item {
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    width: 300px;
+  }
+  .stb-item:hover {
+    color: #c02534;
+  }
+  

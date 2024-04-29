@@ -1,0 +1,8 @@
+{
+    "name": "wp/no-silver-bullets",
+    "type": "wordpress-theme",
+    "require": {
+        "php": ">=8.0",
+        "composer/installers": "~2.0"
+    }
+ }

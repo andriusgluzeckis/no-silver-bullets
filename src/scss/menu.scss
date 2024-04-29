@@ -1,0 +1,31 @@
+.menu-container {
+    @apply absolute top-0 md:translate-x-[calc(-100%_+_160px)];
+    // transform: translateX(calc(-100% + 160px));
+}
+
+.main-nav-item {
+    @apply text-45 font-bur mb-8;
+}
+
+.main-nav-anchor {
+    @apply hover:cursor-red;
+}
+
+.menu-item-about {
+    @apply relative hover:cursor-red;
+
+    &::after {
+        content: '';
+        background-image: url('./images/about.png');
+        @apply hover:cursor-red;
+    }
+}
+
+.menu-inactive {
+    @apply w-0 opacity-0 pointer-events-none;
+    // display: none;
+}
+
+.menu-active {
+    @apply w-full md:w-[725px] opacity-100 pointer-events-auto;
+}

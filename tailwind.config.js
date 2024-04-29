@@ -57,7 +57,7 @@ module.exports = {
         },
         screens: {
           'footer': '1400px',
-          // => @media (min-width: 640px) { ... }
+          // => @media (min-width: 1400px) { ... }
         },
         colors: {
             'primary-color': {

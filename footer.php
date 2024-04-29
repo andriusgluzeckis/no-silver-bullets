@@ -31,7 +31,7 @@
         <div class="flex flex-col">
             <div class="flex justify-end footer:justify-start">
                 <img class="max-w-[288px] md:max-w-full w-auto h-auto mb-3 footer:mb-0 footer:mt-[-117px]"
-                    src="<?php echo get_template_directory_uri() . '/images/unicorn-cat.png'; ?>" alt="?php _e('Unicorn Cat', 'no-silver-bullets'); ?>"
+                    src="<?php echo get_template_directory_uri() . '/images/unicorn-cat.png'; ?>" alt="<?php _e('Unicorn Cat', 'no-silver-bullets'); ?>"
                 />
             </div>
             <div class="flex flex-col-reverse footer:flex-row footer:items-end flex-grow">

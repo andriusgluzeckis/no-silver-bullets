@@ -1,7 +1,5 @@
 export default class Menu {
     constructor() {
-        console.log('menu');
-
         this.menuTriggers = document.querySelectorAll('.js-menu-trigger');
         this.menu = document.querySelector('.js-menu');
         this.activeClass = 'menu-active';

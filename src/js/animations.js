@@ -11,13 +11,18 @@ const boxes = gsap.utils.toArray(".box");
 
 
 // Setup the tween
-const loop = horizontalLoop(boxes, {
-  paused: true, // Sets the tween to be paused initially
-  repeat: -1 // Makes sure the tween runs infinitely
-});
+if (boxes.length > 0) {
+	const loop = horizontalLoop(boxes, {
+		paused: true, // Sets the tween to be paused initially
+		repeat: -1 // Makes sure the tween runs infinitely
+	});
 
-// Start the tween
-loop.play() // Call to start playing the tween
+	// Start the tween
+	loop.play() // Call to start playing the tween
+}
+
+
+
 
 // // ScrollTrigger set up for the whole duration of the body's scroll
 // ScrollTrigger.create({  

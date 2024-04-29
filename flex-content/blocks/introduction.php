@@ -6,12 +6,20 @@
 ?>
 
 <?php
-// Cloned fields from Field Group Colors separate php tag to easer reuse code
+    // Cloned fields from Field Group - Clone: Colors - Colors separate php tag to easer reuse code
+    // primary-color : Turquoise
+    // secondary-color : Red
+    // tangerine : Tangerine
+    // maroon : Maroon
+    // royal-blue : Royal Blue
+    // yellow : Citrus
+    // pink : Pink
+    // TODO add to Readme
     $background_color = get_sub_field('background_color');
     $text_color = get_sub_field('text_color');
 ?>
 
-<section class="w-full bg-<?php echo $background_color; ?> text-<?php echo $text_color; ?>">
+<section class="w-full text-pr bg-<?php echo $background_color; ?> text-<?php echo $text_color; ?>">
     <div class="max-w-[1640px] px-5 w-full mx-auto">
         <?php if ($icon) : ?>
             <div class="flex justify-center w-full mb-6 md:mb-8 font-geo font-normal">

@@ -142,5 +142,4 @@
 </section>
 
 <section class="h-[1400px]">
-
 </section>

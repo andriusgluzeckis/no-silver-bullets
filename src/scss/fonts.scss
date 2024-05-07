@@ -51,6 +51,14 @@
   font-family: 'Bureau Grot UltraBlack';
 }
 
+a {
+  @apply cursor-pointer-blue #{!important};
+}
+
 .title-font-1 {
   @apply text-68
+}
+
+.editorial--how-we-work p {
+  @apply pb-4 md:pb-8 uppercase;
 }

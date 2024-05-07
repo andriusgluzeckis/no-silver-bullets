@@ -1,0 +1,7 @@
+.swiper-pagination-bullet {
+     @apply size-2.5 bg-current transform mx-[6px] scale-100 transition-transform opacity-100 cursor-blue #{!important};
+}
+
+.swiper-pagination-bullet-active {
+    @apply scale-150 #{!important};
+}

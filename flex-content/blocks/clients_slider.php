@@ -1,7 +1,7 @@
 <?php
 	$slides = get_sub_field('slides')
 ?>
-<div class="flex justify-center items-center clients-wrapper py-[33px] md:py-[66px]">
+<div class="flex justify-center items-center clients-wrapper py-[33px] md:py-[66px] bg-primary-color">
   <div class="flex items-center w-full relative overflow-hidden">
 	<?php foreach($slides as $slide) : ?>
 		<div class="box relative flex flex-shrink-0 items-center justify-center m-0 p-0 w-1/2 sm:w-1/3 md:w-1/5">

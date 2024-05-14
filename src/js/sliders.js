@@ -7,7 +7,6 @@ class ClientsSlider {
         }
 
         this.clientsSliderWrapper = clientsSliderWrapper;
-        console.log(this.clientsSliderWrapper);
         this.clientsSliderElement = this.clientsSliderWrapper.querySelector('.swiper');
         
         this.clientsSlider = new Swiper(this.clientsSliderElement, {
@@ -79,7 +78,8 @@ class WorkSliderNavigation {
 
         this.navItem.addEventListener('click', event => {
             event.preventDefault();
-            this.index = event.target.dataset.index;
+            this.index = window.innerWidth > 900 ? parseInt(event.target.dataset.index) + 1 : event.target.dataset.index;
+            console.log(this.index);
             this.slider.slideToLoop(this.index, 300, null);
             this.closeAllNavItems();
             this.active();
@@ -122,6 +122,39 @@ class WorkSlider {
     }
 }
 
+class ContentSlider {
+    constructor(sliderWrapper) {
+        this.sliderWrapper = sliderWrapper;
+        this.sliderElement = this.sliderWrapper.querySelector('.js-content-slider');
+
+        this.buttonPrev = this.sliderWrapper.querySelector('.js-slider-prev');
+        this.buttonNext = this.sliderWrapper.querySelector('.js-slider-next');
+        this.pagination = this.sliderWrapper.querySelector('.js-slider-pagination');
+
+        this.slider = new Swiper(this.sliderElement, {
+            slidesPerView: 1,
+            loop: true,
+            speed: 300,
+            navigation: {
+                nextEl: this.buttonNext,
+                prevEl: this.buttonPrev,
+            },
+            pagination: {
+                el: this.pagination,
+                type: 'bullets',
+                clickable: true
+            },
+            breakpoints: {
+                '900' : {
+                    loop: false,
+                    slidesPerView: 3,
+                    // spaceBetween: 30
+                }
+            }
+        });
+    }
+}
+
 export default class Sliders {
     constructor() {
         this.clientsSliderWrapper = document.querySelector('.js-clients-slider');
@@ -137,6 +170,11 @@ export default class Sliders {
         this.workSliderWrapper = document.querySelector('.js-work-sliders-wrapper');
         if (this.workSliderWrapper) {
             this.workSliderConstructor = new WorkSlider(this.workSliderWrapper);
+        }
+
+        this.contentSliderWrapper = document.querySelector('.js-content-sliders-wrapper');
+        if (this.contentSliderWrapper) {
+            this.contentSliderConstructor = new ContentSlider(this.contentSliderWrapper);
         }
     }
 }

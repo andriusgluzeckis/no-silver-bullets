@@ -27,9 +27,21 @@
         box-shadow: 4px 5px 0px 2px #000;
     }
 
+    .text-drop {
+        text-shadow: 3px 5px 0px #000;
+    }
+
+    .circle-shadow {
+        box-shadow: 10px -10px 5px  rgba(0,0,0,1);
+    }
+
     @screen md {
         .box-shade-soft {
             box-shadow: 14px 17px 0px 2px #000;
+        }
+
+        .bg-red-blue {
+            background: linear-gradient(90deg, rgba(229,40,37,1) 0%, rgba(229,40,37,1) 50%, rgba(106,210,200,1) 50%, rgba(106,210,200,1) 100%);
         }
     }
 }
@@ -51,7 +63,6 @@ html {
 
 body {
     @apply w-full overflow-x-hidden relative;
-    background-color: green;
 }
 
 button {
@@ -82,7 +93,7 @@ button {
 }
 
 .box-shade {
-    margin-right: 23px;
+    margin-right: 9px;
     box-shadow: #000 1px 1px 0,
     #000 2px 2px 0,
     #000 3px 3px 0,
@@ -92,16 +103,32 @@ button {
     #000 7px 7px 0,
     #000 8px 8px 0,    
     #000 9px 9px 0,    
-    #000 10px 10px 0,    
-    #000 11px 11px 0,    
-    #000 12px 12px 0,    
-    #000 13px 13px 0,    
-    #000 14px 14px 0,    
-    #000 15px 15px 0,    
-    #000 16px 16px 0,    
-    #000 17px 17px 0,    
-    #000 18px 18px 0,    
-    #000 19px 19px 0;
+    #000 10px 10px 0; 
     transition: all ease-in-out .3s;
 }
 
+@screen md {
+    .box-shade {
+        margin-right: 23px;
+        box-shadow: #000 1px 1px 0,
+        #000 2px 2px 0,
+        #000 3px 3px 0,
+        #000 4px 4px 0,
+        #000 5px 5px 0,
+        #000 6px 6px 0,
+        #000 7px 7px 0,
+        #000 8px 8px 0,    
+        #000 9px 9px 0,    
+        #000 10px 10px 0,    
+        #000 11px 11px 0,    
+        #000 12px 12px 0,    
+        #000 13px 13px 0,    
+        #000 14px 14px 0,    
+        #000 15px 15px 0,    
+        #000 16px 16px 0,    
+        #000 17px 17px 0,    
+        #000 18px 18px 0,    
+        #000 19px 19px 0;
+        transition: all ease-in-out .3s;
+    }
+}

@@ -1,11 +1,81 @@
 <?php
-    $esc_email = esc_url(get_field('email', 'option'));
+    $esc_email = get_field('email', 'option');
     $esc_linkedIn = esc_url(get_field('linkedin', 'option'));
     $esc_discord = esc_url(get_field('discord', 'option'));
     $esc_sub_title = esc_html(get_field('sub_title', 'option'));
     $esc_email_title = esc_html(get_field('email_title', 'option'));
     $esc_title = apply_filters('the_content', get_field('title', 'option'));
+    
+    $esc_subscribe_title = apply_filters('the_content', get_field('subscribe_title', 'option'));
+    $esc_subscribe_summary = apply_filters('the_content', get_field('subscribe_summary', 'option'));
+
+    $fomt_title_image = get_field('image_title', 'option');
+    $fomt_short_code = get_field('form_short_code', 'option');
+    $quotes = get_field('quotes', 'option');
+
 ?>
+<section class="bg-red-blue js-contact-form">
+    <div class="container px-0 md:px-5 flex flex-col md:flex-row items-center md:py-12">
+
+        <div class="bg-secondary-color text-primary-color w-full md:w-1/2 md:pr-[7%] px-14 md:px-0 py-12 md:py-0">
+            <?php if ($quotes) : ?>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($quotes as $quote) :
+                            $esc_quote = apply_filters('the_content', $quote['quote']);    
+                            $esc_author = esc_html($quote['author']);    
+                        ?>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col">
+                                    <div class="text-26 md:text-48 uppercase mb-12 font-black">
+                                        <?php echo $esc_quote; ?>
+                                    </div>
+                                    <span class="text-14 md:text-18 font-semibold uppercase">
+                                        <?php echo $esc_author; ?>
+                                    </span>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <div class="w-full md:w-1/2 bg-primary-color md:pl-[7%]">
+            <h2 class="flex justify-center mb-6 px-3 md:px-0">
+                <?php echo wp_get_attachment_image($fomt_title_image, 'full'); ?>
+            </h2>
+            <div class="form-contact-us">
+                <?php echo do_shortcode($fomt_short_code); ?>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="w-full bg-primary-color text-secondary-color pb-[90px] pt-[72px] md:py-32">
+    <div class="max-w-[1590px] w-full px-5 mx-auto flex flex-col md:flex-row md:items-center md:justify-between ">
+        <div class="md:max-w-[790px] w-full">
+            <h2 class="font-bur text-34 md:text-68 mb-[35px] ">
+                <?php echo $esc_subscribe_title; ?>
+            </h2>
+            <div class="text-16 md:text-20 md:max-w-[90%]">
+                <?php echo $esc_subscribe_summary; ?>
+            </div>
+        </div>
+        <div class="flex flex-grow md:max-w-[550px] mt-[50px] md:mt-0">
+            <form class="w-full justify-between flex items-center" action="">
+                <input class="bg-primary-color w-full text-22 placeholder:text-secondary-color placeholder:text-22 py-3 pl-4 md:py-[34px] md:pl-10 border-2 border-secondary-color rounded-full outline-none focus:outline-none"
+                    type="email" id="email" name="subscribe-email" placeholder="<?php _e('YOUR E-MAIL', 'no-silver-bullets'); ?>"
+                >
+                <button class="cursor-pointer-blue ml-5" type="submit">
+                    <svg class="w-[54px] md:w-[97px] h-[54px] md:h-[97px] text-current pointer-events-none">
+                        <use xlink:href="#sprite-button"></use>
+                    </svg>  
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
 <footer class="w-full bg-secondary-color text-primary-color pt-10 footer:pt-40 pb-6 footer:pb-[75px]">
     <div class="container flex flex-col footer:flex-row w-full footer:justify-between">
         <div class="flex flex-col max-w-[970px]">

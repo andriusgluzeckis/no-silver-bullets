@@ -6,7 +6,7 @@
     }
 ?>
 
-<section class="pt-7 pb-5 md:pb-[60px] md:pt-6">
+<section class="pt-7 pb-5 md:pb-[60px] md:pt-6 bg-primary-color">
     <div class="relative px-5 max-w-[1665px] w-full mx-auto js-case-studies-wrapper">
         <div class="swiper md:pr-5 js-case-studies-slider">
             <div class="swiper-wrapper">

@@ -45,7 +45,7 @@ add_filter('nav_menu_link_attributes', 'oa_nav_menu_list_item_anchor_classnames'
 function oa_nav_menu_list_item_classnames($array, $item, $args, $depth)
 {
     if (isset($args->menu_class) && $args->menu_class) {
-        $array[] = sprintf('%s-item menu-item-%s', $args->menu_class, strtolower($item->title));
+        $array[] = sprintf('%s-item %s-menu-item group', $args->menu_class, sanitize_title($item->title));
     }
     return $array;
 }

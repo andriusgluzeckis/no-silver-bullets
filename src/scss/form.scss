@@ -1,0 +1,30 @@
+.form-contact-us {
+    @apply px-5 md:px-0;
+    
+    input[type="text"],
+    input[type="email"],
+    select
+     {
+        @apply w-full border-0 border-b-[6px] border-secondary-color text-22 placeholder:text-22 font-semibold text-secondary-color placeholder:text-secondary-color pl-4 py-3 bg-transparent outline-none focus:outline-none mb-10
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzAgMjIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTE1IDIyIC4yNzguMjVoMjkuNDQ0TDE1IDIyWiIgZmlsbD0iI0U1MjgyNSIvPgo8L3N2Zz4K");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        background-size: 30px 23px;
+
+        @apply text-22 placeholder:text-22 font-semibold;
+    }
+
+    textarea {
+        @apply w-full bg-secondary-color text-primary-color placeholder:text-primary-color text-22 placeholder:text-22 font-semibold outline-none focus:outline-none px-4 py-3;
+    }
+
+    input[type="submit"] {
+        @apply flex w-[calc(100%_-_10px)] md:w-[calc(100%_-_35px)] items-center justify-center bg-secondary-color text-primary-color p-[17px] button-shade hover:cursor-pointer-blue;
+    }
+}

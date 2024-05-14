@@ -16,10 +16,11 @@
     // pink : Pink
     // TODO add to Readme
     $background_color = get_sub_field('background_color');
+
     $text_color = get_sub_field('text_color');
 ?>
 
-<section class="w-full text-pr bg-<?php echo $background_color; ?> text-<?php echo $text_color; ?>">
+<section class="w-full text-pr bg-<?php echo $background_color; ?> text-<?php echo $text_color; ?> md:pt-[170px] md:pb-[320px]">
     <div class="max-w-[1640px] px-5 w-full mx-auto">
         <?php if ($icon) : ?>
             <div class="flex justify-center w-full mb-6 md:mb-8 font-geo font-normal">

@@ -1,5 +1,108 @@
+// @layer utilities {
+//     .form-contact-us input[type="submit"],
+//     .button-shade {
+//         margin-right: 10px;
+//         box-shadow: #000 1px 1px 0,
+//         #000 2px 2px 0,
+//         #000 3px 3px 0,
+//         #000 4px 4px 0,
+//         #000 5px 5px 0,
+//         #000 6px 6px 0,
+//         #000 7px 7px 0,
+//         #000 8px 8px 0,    
+//         #000 9px 9px 0,    
+//         #000 10px 10px 0,    
+//         #000 11px 11px 0,    
+//         #000 12px 12px 0,    
+//         #000 13px 13px 0,    
+//         #000 14px 14px 0,    
+//         #000 15px 15px 0,    
+//         #000 16px 16px 0,    
+//         #000 17px 17px 0;    
+//         transition: all ease-in-out .3s;
+//     }
+//     @screen md {
+//         .form-contact-us input[type="submit"],
+//         .button-shade {
+//             margin-right: 23px;
+//             box-shadow: #000 1px 1px 0,
+//             #000 2px 2px 0,
+//             #000 3px 3px 0,
+//             #000 4px 4px 0,
+//             #000 5px 5px 0,
+//             #000 6px 6px 0,
+//             #000 7px 7px 0,
+//             #000 8px 8px 0,    
+//             #000 9px 9px 0,    
+//             #000 10px 10px 0,    
+//             #000 11px 11px 0,    
+//             #000 12px 12px 0,    
+//             #000 13px 13px 0,    
+//             #000 14px 14px 0,    
+//             #000 15px 15px 0,    
+//             #000 16px 16px 0,    
+//             #000 17px 17px 0,    
+//             #000 18px 18px 0,    
+//             #000 19px 19px 0,    
+//             #000 20px 20px 0,    
+//             #000 21px 21px 0,    
+//             #000 22px 22px 0,    
+//             #000 23px 23px 0,    
+//             #000 24px 24px 0,    
+//             #000 25px 25px 0,    
+//             #000 26px 26px 0,    
+//             #000 27px 27px 0,    
+//             #000 28px 28px 0,    
+//             #000 29px 29px 0,    
+//             #000 30px 30px 0,    
+//             #000 31px 31px 0,    
+//             #000 32px 32px 0,    
+//             #000 33px 33px 0,    
+//             #000 34px 34px 0,    
+//             #000 35px 35px 0;
+//             transition: all ease-in-out .3s;
+//         }
+        
+//         .form-contact-us input[type="submit"]:hover,
+//         .button-shade:hover {
+//             box-shadow: #000 1px 1px 0,
+//             #000 2px 2px 0,
+//             #000 3px 3px 0,
+//             #000 4px 4px 0,
+//             #000 5px 5px 0,
+//             #000 6px 6px 0,
+//             #000 7px 7px 0,
+//             #000 8px 8px 0,    
+//             #000 9px 9px 0,    
+//             #000 10px 10px 0,    
+//             #000 11px 11px 0,    
+//             #000 12px 12px 0,    
+//             #000 13px 13px 0,    
+//             #000 14px 14px 0,    
+//             #000 15px 15px 0,    
+//             #000 16px 16px 0,    
+//             #000 17px 17px 0,    
+//             #000 18px 18px 0,    
+//             #000 19px 19px 0,
+//             #000 20px 20px 0;
+//         }
+        
+//         .form-contact-us input[type="submit"]:focus-within,
+//         .button-shade:focus-within {
+//             box-shadow: #000 1px 1px 0,
+//             #000 2px 2px 0,
+//             #000 3px 3px 0,
+//             #000 4px 4px 0,
+//             #000 5px 5px 0,
+//             #000 6px 6px 0;
+//         }
+//     }
+    
+// }
+
+
+.form-contact-us input[type="submit"],
 .button-shade {
-    margin-right: 23px;
     box-shadow: #000 1px 1px 0,
     #000 2px 2px 0,
     #000 3px 3px 0,
@@ -16,30 +119,12 @@
     #000 14px 14px 0,    
     #000 15px 15px 0,    
     #000 16px 16px 0,    
-    #000 17px 17px 0,    
-    #000 18px 18px 0,    
-    #000 19px 19px 0,    
-    #000 20px 20px 0,    
-    #000 21px 21px 0,    
-    #000 22px 22px 0,    
-    #000 23px 23px 0,    
-    #000 24px 24px 0,    
-    #000 25px 25px 0,    
-    #000 26px 26px 0,    
-    #000 27px 27px 0,    
-    #000 28px 28px 0,    
-    #000 29px 29px 0,    
-    #000 30px 30px 0,    
-    #000 31px 31px 0,    
-    #000 32px 32px 0,    
-    #000 33px 33px 0,    
-    #000 34px 34px 0,    
-    #000 35px 35px 0;
+    #000 17px 17px 0;
     transition: all ease-in-out .3s;
 }
 
+.form-contact-us input[type="submit"]:hover,
 .button-shade:hover {
-    margin-right: 23px;
     box-shadow: #000 1px 1px 0,
     #000 2px 2px 0,
     #000 3px 3px 0,
@@ -63,8 +148,8 @@
     transition: all ease-in-out .3s;
 }
 
+.form-contact-us input[type="submit"]:focus-within,
 .button-shade:focus-within {
-    margin-right: 23px;
     box-shadow: #000 1px 1px 0,
     #000 2px 2px 0,
     #000 3px 3px 0,
@@ -72,4 +157,52 @@
     #000 5px 5px 0,
     #000 6px 6px 0;
     transition: all ease-in-out .3s;
+}
+.form-contact-us input[type="submit"],
+.button-shade {
+    @apply mr-[10px];
+}
+
+@screen md {
+    .form-contact-us input[type="submit"],
+    .button-shade {
+        box-shadow: #000 1px 1px 0,
+        #000 2px 2px 0,
+        #000 3px 3px 0,
+        #000 4px 4px 0,
+        #000 5px 5px 0,
+        #000 6px 6px 0,
+        #000 7px 7px 0,
+        #000 8px 8px 0,    
+        #000 9px 9px 0,    
+        #000 10px 10px 0,    
+        #000 11px 11px 0,    
+        #000 12px 12px 0,    
+        #000 13px 13px 0,    
+        #000 14px 14px 0,    
+        #000 15px 15px 0,    
+        #000 16px 16px 0,    
+        #000 17px 17px 0,    
+        #000 18px 18px 0,    
+        #000 19px 19px 0,    
+        #000 20px 20px 0,    
+        #000 21px 21px 0,    
+        #000 22px 22px 0,    
+        #000 23px 23px 0,    
+        #000 24px 24px 0,    
+        #000 25px 25px 0,    
+        #000 26px 26px 0,    
+        #000 27px 27px 0,    
+        #000 28px 28px 0,    
+        #000 29px 29px 0,    
+        #000 30px 30px 0,    
+        #000 31px 31px 0,    
+        #000 32px 32px 0,    
+        #000 33px 33px 0,    
+        #000 34px 34px 0,    
+        #000 35px 35px 0;
+        transition: all ease-in-out .3s;
+        
+        @apply mr-[23px];
+    }
 }

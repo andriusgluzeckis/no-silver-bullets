@@ -121,7 +121,7 @@
         <div class="md:relative w-[177px] mt-8">
             <div class="absolute top-5 md:top-[-1px] left-1.5 md:left-0 border border-secondary-color z-40">
                 <div class="fixed w-[calc(100%_-_23px)] md:w-auto">
-                    <button class="js-menu-trigger flex items-center justify-center bg-current text-primary-color p-[17px] pt-[1.2rem] pb-[1.075rem] button-shade cursor-pointer ml-auto hover:cursor-pointer-blue transition-all ease-in-out duration-100">
+                    <button class="js-menu-trigger flex items-center justify-center bg-current text-primary-color p-[17px] pt-[1.2rem] pb-[1.075rem] button-shade cursor-pointer ml-auto hover:cursor-pointer-blue">
                         <span class="text-black block font-geo md:font-bur uppercase text-14 md:text-32 font-semibold"><?php _e('Menu', 'no-silver-bullets'); ?></span>
                     </button>
                     <div class="bg-primary-color overflow-hidden menu-container box-shade menu-inactive js-menu transition-all ease-in-out duration-150 z-30">

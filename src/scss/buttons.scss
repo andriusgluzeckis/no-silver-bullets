@@ -120,7 +120,8 @@
     #000 15px 15px 0,    
     #000 16px 16px 0,    
     #000 17px 17px 0;
-    transition: all ease-in-out .3s;
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out 0;
+    transform: translate(0, 0);
 }
 
 .form-contact-us input[type="submit"]:hover,
@@ -145,7 +146,8 @@
     #000 18px 18px 0,    
     #000 19px 19px 0,    
     #000 20px 20px 0;
-    transition: all ease-in-out .3s;
+    transition: box-shadow .2s ease-in-out, transform .1s ease-in-out .02s;
+    transform: translate(15px, 15px);
 }
 
 .form-contact-us input[type="submit"]:focus-within,
@@ -156,7 +158,8 @@
     #000 4px 4px 0,
     #000 5px 5px 0,
     #000 6px 6px 0;
-    transition: all ease-in-out .3s;
+    transform: translate(17px, 30px);
+    
 }
 .form-contact-us input[type="submit"],
 .button-shade {
@@ -201,8 +204,8 @@
         #000 33px 33px 0,    
         #000 34px 34px 0,    
         #000 35px 35px 0;
-        transition: all ease-in-out .3s;
-        
+
         @apply mr-[23px];
+
     }
 }
